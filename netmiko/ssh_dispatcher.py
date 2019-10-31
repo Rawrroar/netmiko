@@ -3,6 +3,7 @@ from netmiko.a10 import A10SSH
 from netmiko.accedian import AccedianSSH
 from netmiko.alcatel import AlcatelAosSSH
 from netmiko.alcatel import AlcatelSrosSSH
+from netmiko.alcatel import FileTransferSROS
 from netmiko.arista import AristaSSH, AristaTelnet
 from netmiko.arista import AristaFileTransfer
 from netmiko.apresia import ApresiaAeosSSH, ApresiaAeosTelnet
@@ -174,6 +175,7 @@ FILE_TRANSFER_MAP = {
     "dell_os10": DellOS10FileTransfer,
     "juniper_junos": JuniperFileTransfer,
     "linux": LinuxFileTransfer,
+    "alcatel_sros": FileTransferSROS,
 }
 
 # Also support keys that end in _ssh
